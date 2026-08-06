@@ -12,16 +12,12 @@ import { Slide06 } from "./components/Slide06";
 import { Slide07Model } from "./components/Slide07Model";
 import { Slide08DesignSystem } from "./components/Slide08DesignSystem";
 import { Slide09Stack } from "./components/Slide09Stack";
-import { Slide10TeamComposition } from "./components/Slide10TeamComposition";
-import { Slide11Roles } from "./components/Slide11Roles";
 import { Slide12AreaInteractions } from "./components/Slide12AreaInteractions";
-import { Slide13RitosDeUX } from "./components/Slide13RitosDeUX";
 import { Slide14IndicadoresDeSucesso } from "./components/Slide14IndicadoresDeSucesso";
 import { ClosingSlide } from "./components/ClosingSlide";
-import { Slide15RoadmapImplantacao } from "./components/Slide15RoadmapImplantacao";
 import { createSlideMetrics } from "./scaling";
 
-const TOTAL_SLIDES = 16;
+const TOTAL_SLIDES = 12;
 const DESIGN_WIDTH = 1920;
 const DESIGN_HEIGHT = 1080;
 const CLOSE_ICON_PATH = "M11.176 22.7L9.3 20.8333L14.124 16L9.3 11.2L11.176 9.33333L16 14.1537L20.7907 9.33333L22.6667 11.2L17.8427 16L22.6667 20.8333L20.7907 22.7L16 17.8797L11.176 22.7Z";
@@ -196,7 +192,7 @@ export default function App() {
   const PROXIMITY_BUFFER = 32; // px — custom cursor starts hiding before reaching element
 
   const isPointerOverDragCursorArea = (x: number, y: number) => {
-    if (currentSlide !== 2 && currentSlide !== 11) return false;
+    if (currentSlide !== 2 && currentSlide !== 9) return false;
     const target = document.elementFromPoint(x, y);
     const selector =
       currentSlide === 2
@@ -555,67 +551,30 @@ export default function App() {
           />
         )}
 
-        {/* ─────────────── SLIDE 10 ─────────────── */}
+        {/* ─────────────── SLIDE 10 — Area interactions ─────────────── */}
         {currentSlide === 9 && (
-          <Slide10TeamComposition
-            key="slide-10"
-            scaleX={scaleX}
-            scaleY={scaleY}
-          />
-        )}
-
-        {/* ─────────────── SLIDE 11 ─────────────── */}
-        {currentSlide === 10 && (
-          <Slide11Roles
-            key="slide-11"
-            scaleX={scaleX}
-            scaleY={scaleY}
-            onModalChange={setIsModalOpen}
-          />
-        )}
-
-        {/* ─────────────── SLIDE 12 ─────────────── */}
-        {currentSlide === 11 && (
           <Slide12AreaInteractions
-            key="slide-12"
+            key="slide-10-area-interactions"
             scaleX={scaleX}
             scaleY={scaleY}
             onDragAreaHover={setIsDragAreaActive}
           />
         )}
 
-        {/* ─────────────── SLIDE 13 ─────────────── */}
-        {currentSlide === 12 && (
-          <Slide13RitosDeUX
-            key="slide-13"
-            scaleX={scaleX}
-            scaleY={scaleY}
-          />
-        )}
-
-        {/* ─────────────── SLIDE 14 ─────────────── */}
-        {currentSlide === 13 && (
+        {/* ─────────────── SLIDE 11 — Success indicators ─────────────── */}
+        {currentSlide === 10 && (
           <Slide14IndicadoresDeSucesso
-            key="slide-14"
+            key="slide-11-success-indicators"
             scaleX={scaleX}
             scaleY={scaleY}
             onPanelViewChange={(panelView) => setIsSlide14PanelOpen(panelView !== "overview")}
           />
         )}
 
-        {/* ─────────────── SLIDE 15 ─────────────── */}
-        {currentSlide === 14 && (
-          <Slide15RoadmapImplantacao
-            key="slide-15"
-            scaleX={scaleX}
-            scaleY={scaleY}
-          />
-        )}
-
-        {/* ─────────────── SLIDE 16 — Closing ─────────────── */}
-        {currentSlide === 15 && (
+        {/* ─────────────── SLIDE 12 — Closing ─────────────── */}
+        {currentSlide === 11 && (
           <ClosingSlide
-            key="slide-16-closing"
+            key="slide-12-closing"
             scaleX={scaleX}
             scaleY={scaleY}
             logoRotateX={logoRotateX}

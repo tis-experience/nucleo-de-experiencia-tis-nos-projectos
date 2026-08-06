@@ -6,7 +6,7 @@ Este projecto deriva de `plano-de-implantacao`, mas possui outro propósito: dem
 
 ## Estado
 
-**Planeamento.** A apresentação original foi copiada como base técnica e visual, mas a adaptação do conteúdo ainda não foi implementada.
+**Estrutura inicial.** A apresentação original foi copiada como base técnica e visual. As antigas páginas 10, 11, 13 e 15 já foram retiradas da sequência activa, que possui agora 12 páginas contínuas. A adaptação executiva do conteúdo ainda não foi implementada.
 
 ## Público e formato
 

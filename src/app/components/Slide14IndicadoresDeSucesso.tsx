@@ -211,7 +211,7 @@ function SlideFooter({ metrics }: { metrics: Metrics }) {
           style={{ fontSize: vs(14), letterSpacing: vs(1.5), lineHeight: "normal" }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#036ef2] uppercase whitespace-nowrap"
         >
-          14
+          11
         </p>
         <div style={{ width: vx(24), height: vy(2), overflow: "hidden", position: "relative", flexShrink: 0 }}>
           <div style={{ position: "absolute", background: STROKE_BLUE, height: vs(1), left: 0, right: 0, top: 0 }} />

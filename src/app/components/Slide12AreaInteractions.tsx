@@ -622,7 +622,7 @@ export function Slide12AreaInteractions({ scaleX, scaleY, onDragAreaHover }: Pro
               whiteSpace: "nowrap",
             }}
           >
-            12
+            10
           </p>
           <div style={{ width: vx(24), height: vy(2), overflow: "hidden", position: "relative", flexShrink: 0 }}>
             <div style={{ position: "absolute", background: STROKE_BLUE, height: vs(1), left: 0, right: 0, top: 0 }} />

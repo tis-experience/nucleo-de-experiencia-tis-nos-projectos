@@ -2,6 +2,10 @@
 
 ## 1. Direcção da nova apresentação
 
+### Estado técnico actual
+
+A cópia de trabalho já exclui da navegação as antigas páginas 10, 11, 13 e 15. A sequência transitória possui 12 páginas contínuas; as antigas páginas 12 e 14 aparecem agora como páginas 10 e 11, seguidas pelo encerramento na página 12. Os componentes excluídos permanecem no código apenas como referência até à implementação da nova pauta executiva.
+
 ### Propósito
 
 Explicar às lideranças, de forma visual e aplicada, como Experience Engineering participa nos projectos e melhora a qualidade das decisões antes, durante e depois da construção da solução.
@@ -27,14 +31,14 @@ Explicar às lideranças, de forma visual e aplicada, como Experience Engineerin
 - Utilizar imagens de artefactos e situações reais ou sintéticas, não apenas ícones.
 - Manter cada página centrada numa única mensagem executiva.
 - Preservar PT-AO pré-Acordo e utilizar “núcleo” quando Experience Engineering for tratado como estrutura organizacional.
-- Utilizar no rodapé: **APRESENTAÇÃO EXECUTIVA — EXPERIENCE ENGINEERING NOS PROJECTOS**.
+- Utilizar no rodapé: **APLICAÇÃO PRÁTICA DE UX NOS PROJECTOS**.
 - Deixar toda mensagem essencial no primeiro estado; hover, carrossel e modal servem apenas para aprofundamento opcional.
 
 ## 2. Nova estrutura proposta
 
 | Nova página | Título de trabalho | Origem | Acção | O que entra | O que sai |
 |---|---|---|---|---|---|
-| 01 | **Experience Engineering nos projectos** | Capa actual | Adaptar | “Apresentação executiva”; subtítulo sobre integrar experiência, negócio e tecnologia | “Kickoff”, “Plano de implantação” e referências ao lançamento do núcleo |
+| 01 | **Experience Engineering nos projectos** | Capa actual | Adaptar | “Aplicação prática de UX”; subtítulo sobre integrar experiência, negócio e tecnologia | “Kickoff”, “Plano de implantação” e referências ao lançamento do núcleo |
 | 02 | **O problema não é a falta de ecrãs** | Páginas actuais 03 e 04 | Recompor | Percurso actual `Pedido → Ecrãs → Desenvolvimento`; iceberg das cinco camadas como evidência visual secundária | Diagnóstico extenso, percentuais e tom de avaliação interna |
 | 03 | **O que muda com Experience Engineering** | Página actual 03 + conteúdo novo | Criar | Dois percursos paralelos do mesmo projecto: sem processo estruturado e com Experience Engineering; imagens de pedidos, ecrãs, desenvolvimento, testes, métricas e retrabalho | Explicação puramente textual do processo actual |
 | 04 | **Etapas, perguntas e entregáveis** | Página actual 06 e infográfico expandido | Redesenhar | `Descobrir, Definir, Explorar, Validar, Entregar, Acompanhar`; para cada etapa: pergunta respondida, entregável/evidência e imagem do artefacto | Lista longa de metodologias na visão principal e protagonismo excessivo da IA |
