@@ -1729,7 +1729,7 @@ function PageThree({
         style={{
           position: "absolute",
           left: vx(784),
-          top: vy(341 + activeCardHeight + 33),
+          top: vy(341 + activeCardHeight + 57),
           width: vx(112),
           display: "flex",
           justifyContent: "center",
