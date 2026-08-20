@@ -370,7 +370,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
         style={{
           position: "absolute",
           left: vx(128),
-          top: vy(741),
+          top: vy(765),
           display: "flex",
           gap: vx(32),
           alignItems: "center",
