@@ -6,13 +6,13 @@ Este projecto deriva de `plano-de-implantacao`, mas possui outro propósito: dem
 
 ## Estado
 
-**Estrutura inicial.** A apresentação original foi copiada como base técnica e visual. As antigas páginas 10, 11, 13 e 15 já foram retiradas da sequência activa, que possui agora 12 páginas contínuas. A adaptação executiva do conteúdo ainda não foi implementada.
+**Apresentação adaptada.** A sequência activa possui 11 páginas contínuas e apresenta como Experience Engineering actua nos projectos da TIS.
 
 ## Público e formato
 
 - Público principal: lideranças de negócio, produto, tecnologia e áreas parceiras.
 - Duração de referência: 12 a 15 minutos.
-- Extensão prevista: 10 páginas no total; a última termina com uma decisão e um próximo passo, sem página genérica de agradecimento.
+- Extensão actual: 11 páginas no total.
 - Identificação na capa: **Apresentação executiva**.
 - Não é um kickoff, playbook ou plano de implantação.
 

@@ -18,7 +18,7 @@ const NAVY = "#04165d";
 const INK = "#2f3237";
 const MUTED = "#6e7587";
 const SNOW = "#f5f5f5";
-const FOOTER_TEXT = "PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING";
+const FOOTER_TEXT = "Experience Engineering nos projectos";
 const ROLE_ROW_HOVER_BOX_SHADOW = "0 8px 24px 0 rgba(5, 28, 117, 0.16)";
 const ease = "easeOut" as const;
 const fade = (delay: number) => ({ duration: 0.55, delay, ease });

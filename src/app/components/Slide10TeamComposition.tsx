@@ -25,7 +25,7 @@ const NAVY = "#04165d";
 const INK = "#2f3237";
 const MUTED = "#6e7587";
 const BORDER = "#c7cad1";
-const FOOTER_TEXT = "PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING";
+const FOOTER_TEXT = "Experience Engineering nos projectos";
 const ease = "easeOut" as const;
 const fade = (delay: number) => ({ duration: 0.55, delay, ease });
 

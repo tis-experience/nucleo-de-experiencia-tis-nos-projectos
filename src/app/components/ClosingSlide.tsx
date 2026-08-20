@@ -68,7 +68,7 @@ export function ClosingSlide({ scaleX, scaleY, logoRotateX, logoRotateY }: Props
           style={{ fontSize: vs(14), letterSpacing: vs(1.5), lineHeight: "normal" }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-white uppercase whitespace-nowrap"
         >
-          EQUIPA EXPERIENCE ENGINEERING
+          Experience Engineering nos projectos
         </p>
       </motion.div>
 

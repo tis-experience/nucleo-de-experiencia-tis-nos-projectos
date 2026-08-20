@@ -49,7 +49,7 @@ const INK = "#2f3237";
 const MUTED = "#6e7587";
 const STROKE_BLUE = "rgba(43,118,193,0.4)";
 const PALE_BLUE = "rgba(3, 110, 242, 0.06)";
-const FOOTER_TEXT = "PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING";
+const FOOTER_TEXT = "Experience Engineering nos projectos";
 const EASE = [0.22, 1, 0.36, 1] as const;
 const PAGE_TRANSITION_SECONDS = 0.42;
 const NAV_ARROW_UP_PATH = "M2 16L12 6L22 16L20.225 17.775L12 9.55L3.775 17.775L2 16Z";
@@ -622,7 +622,7 @@ export function Slide12AreaInteractions({ scaleX, scaleY, onDragAreaHover }: Pro
               whiteSpace: "nowrap",
             }}
           >
-            10
+            09
           </p>
           <div style={{ width: vx(24), height: vy(2), overflow: "hidden", position: "relative", flexShrink: 0 }}>
             <div style={{ position: "absolute", background: STROKE_BLUE, height: vs(1), left: 0, right: 0, top: 0 }} />

@@ -39,7 +39,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
     },
     {
       w: 620,
-      text: "Existe oportunidade para consolidar um método repetível e uma entrada mais estruturada nos processos da empresa.",
+      text: "Há margem para estabelecer um método consistente e uma participação mais estruturada nos processos de cada projecto.",
     },
   ];
 
@@ -63,7 +63,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
           position: "absolute",
           left: vx(120),
           top: vy(96),
-          width: vx(640),
+          width: vx(860),
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
@@ -78,18 +78,12 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
             Ponto de partida
           </p>
           <p
-            style={{ fontSize: vs(80), letterSpacing: vs(-1.5), width: vx(640) }}
+            style={{ fontSize: vs(80), letterSpacing: vs(-1.5), width: "100%" }}
             className="font-['Bronkoh-Heavy',sans-serif] not-italic leading-none text-[#04165d]"
           >
-            O contexto actual de UX na TIS
+            Contexto actual e visão de UX para o futuro na TIS
           </p>
         </div>
-        <p
-          style={{ fontSize: vs(28), width: vx(640) }}
-          className="font-['Bronkoh-Regular',sans-serif] not-italic leading-[1.5] text-[#2f3237]"
-        >
-          Oportunidades para estruturar a disciplina.
-        </p>
       </motion.div>
 
       {/* ── Bullet points ── */}
@@ -100,7 +94,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
         style={{
           position: "absolute",
           left: vx(120),
-          top: vy(437),
+          top: vy(387),
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
@@ -115,7 +109,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
         </p>
 
         <div style={{ display: "flex", flexDirection: "column", gap: vy(32) }}>
-          {BULLETS.map((b, i) => (
+          {BULLETS.slice(0, 1).map((b, i) => (
             <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: vx(12), width: vx(b.w) }}>
               <div style={{ height: vy(32), display: "flex", alignItems: "center", flexShrink: 0 }}>
                 <div style={{ width: vs(10), height: vs(10), backgroundColor: "#036ef2" }} />
@@ -129,19 +123,16 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
             </div>
           ))}
 
-          {/* Bullet 3 — com destaque e link */}
+          {/* Bullet 3 — destaque interactivo para a escala NN/g */}
           <div style={{ display: "flex", alignItems: "flex-start", gap: vx(12), width: vx(620) }}>
             <div style={{ height: vy(32), display: "flex", alignItems: "center", flexShrink: 0 }}>
               <div style={{ width: vs(10), height: vs(10), backgroundColor: "#036ef2" }} />
             </div>
-            <div style={{ flex: 1 }} className="font-['Manrope',sans-serif] font-normal text-[#04165d]">
-              <p style={{ fontSize: vs(20) }} className="leading-[1.5]">
-                Referência de maturidade de UX na TIS (escala NN/g):
-              </p>
-              <p
-                style={{ fontSize: vs(24), letterSpacing: vs(-0.25) }}
-                className="font-['Bronkoh-Heavy',sans-serif]"
-              >
+            <p
+              style={{ flex: 1, fontSize: vs(20) }}
+              className="font-['Manrope',sans-serif] font-normal leading-[1.5] text-[#04165d]"
+            >
+              Atualmente a TIS situa-se entre os{" "}
                 <button
                   onClick={(e) => { e.stopPropagation(); openModal(); }}
                   onMouseEnter={() => setLinkHovered(true)}
@@ -151,11 +142,12 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
                     border: "none",
                     padding: 0,
                     cursor: "pointer",
-                    fontSize: "inherit",
-                    letterSpacing: "inherit",
-                    fontFamily: "inherit",
-                    fontWeight: "inherit",
+                    fontSize: vs(24),
+                    letterSpacing: vs(-0.25),
+                    fontFamily: "'Bronkoh-Heavy', sans-serif",
+                    fontWeight: 900,
                     fontStyle: "inherit",
+                    verticalAlign: "baseline",
                   }}
                 >
                   <span
@@ -166,7 +158,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
                       lineHeight: 1,
                     }}
                   >
-                    Nível entre 2 e 3
+                    níveis 2 e 3
                     <motion.span
                       initial={{ height: vs(2), backgroundColor: "#04165d" }}
                       animate={{
@@ -183,10 +175,24 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
                       }}
                     />
                   </span>
-                </button>
+                </button>{" "}
+              na escala de maturidade de UX da NN/g, sendo um ponto de partida com espaço claro para evoluir.
+            </p>
+          </div>
+
+          {BULLETS.slice(1).map((b, i) => (
+            <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: vx(12), width: vx(b.w) }}>
+              <div style={{ height: vy(32), display: "flex", alignItems: "center", flexShrink: 0 }}>
+                <div style={{ width: vs(10), height: vs(10), backgroundColor: "#036ef2" }} />
+              </div>
+              <p
+                style={{ fontSize: vs(20), flex: 1 }}
+                className="font-['Manrope',sans-serif] font-normal leading-[1.5] text-[#04165d]"
+              >
+                {b.text}
               </p>
             </div>
-          </div>
+          ))}
         </div>
       </motion.div>
 
@@ -203,7 +209,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
         }}
         className="font-['Bronkoh-Heavy',sans-serif] not-italic leading-[1.3] text-[#04165d] whitespace-nowrap"
       >
-        Há espaço para tornar a actuação de UX mais integrada, previsível e colaborativa.
+        O futuro necessita de uma prática de UX formalizada e integrada aos projectos, previsível no método e colaborativa na execução.
       </motion.p>
 
       {/* ── Footer ── */}
@@ -234,7 +240,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
             style={{ fontSize: vs(14), letterSpacing: vs(1.5) }}
             className="font-['Bronkoh-SemiBold',sans-serif] not-italic leading-normal text-[#6e7587] uppercase whitespace-nowrap"
           >
-            PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING
+            Experience Engineering nos projectos
           </p>
         </div>
 
@@ -289,13 +295,13 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
           width: vx(620),
           paddingLeft: vx(56),
           paddingRight: vx(56),
-          paddingTop: vy(48),
-          paddingBottom: vy(48),
+          paddingTop: vy(56),
+          paddingBottom: vy(56),
           borderRadius: vs(40),
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
-          gap: vy(40),
+          gap: vy(32),
           backgroundColor: "rgba(3, 110, 242, 0.06)",
         }}
       >

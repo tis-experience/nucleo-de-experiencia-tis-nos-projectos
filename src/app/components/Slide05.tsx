@@ -1,14 +1,17 @@
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { createSlideMetrics } from "../scaling";
 import svgPaths from "../../imports/05AlemDoDesenhoDeTelas/svg-d0t3u4q1u6";
 import { imgGroup } from "../../imports/05AlemDoDesenhoDeTelas/svg-s8nfu";
 import iconPaths from "../../imports/MainContainer/svg-xc3vwdt1gg";
+import { ExperienceAreaModal } from "./ExperienceAreaModal";
 
 interface Props {
   scaleX: number;
   scaleY: number;
   onPrev: () => void;
   onNext: () => void;
+  onModalChange?: (open: boolean) => void;
 }
 
 const ease = "easeOut" as const;
@@ -29,7 +32,7 @@ const CARDS = [
   {
     num: "02",
     iconKey: "p1c0e6c00",
-    title: "Design de Interface e Interacção",
+    title: "Design de Interface e Interação",
     items: [
       "Wireframes, fluxos e protótipos",
       "Design de alta fidelidade",
@@ -78,8 +81,13 @@ const CARDS = [
   },
 ];
 
-export function Slide05({ scaleX, scaleY }: Props) {
+export function Slide05({ scaleX, scaleY, onModalChange }: Props) {
   const { vx, vy, vs } = createSlideMetrics(scaleX, scaleY);
+  const [activeCard, setActiveCard] = useState<number | null>(null);
+
+  useEffect(() => {
+    onModalChange?.(activeCard !== null);
+  }, [activeCard, onModalChange]);
 
   // Card column width: 3 × 560 + 2 × 20 = 1720 (MainContainer)
   const cardW = vx(560);
@@ -123,7 +131,7 @@ export function Slide05({ scaleX, scaleY }: Props) {
             className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
           >
             <p style={{ lineHeight: 1, marginBottom: 0 }}>Experience Engineering</p>
-            <p style={{ lineHeight: 1 }}>muito além do desenho de ecrãs</p>
+            <p style={{ lineHeight: 1 }}>indo além do design de interfaces</p>
           </div>
         </div>
 
@@ -154,19 +162,37 @@ export function Slide05({ scaleX, scaleY }: Props) {
         {CARDS.map((card, i) => (
           <motion.div
             key={card.num}
+            data-experience-card={card.num}
+            role="button"
+            tabIndex={0}
+            aria-label={`Abrir detalhes de ${card.title}`}
+            aria-haspopup="dialog"
+            onClick={(event) => {
+              event.stopPropagation();
+              setActiveCard(i);
+            }}
+            onKeyDown={(event) => {
+              if (event.key !== "Enter" && event.key !== " ") return;
+              event.preventDefault();
+              event.stopPropagation();
+              setActiveCard(i);
+            }}
             initial={{ opacity: 0, y: vy(32) }}
             animate={{ opacity: 1, y: 0 }}
             transition={fade(0.18 + i * 0.08)}
+            className="group transition-colors duration-300 ease-out hover:bg-[#036ef2]"
             style={{
+              position: "relative",
               width: cardW,
               boxSizing: "border-box",
-              backgroundColor: "#fff",
               border: `${vs(2)}px solid #036ef2`,
               borderRadius: vs(32),
               padding: `${vy(24)}px ${vx(32)}px`,
               display: "flex",
               flexDirection: "column",
               gap: vy(20),
+              overflow: "hidden",
+              cursor: "pointer",
             }}
           >
             {/* Card header — Figma 52:797 */}
@@ -199,6 +225,7 @@ export function Slide05({ scaleX, scaleY }: Props) {
                   <path
                     d={iconPaths[card.iconKey as keyof typeof iconPaths]}
                     fill="#036ef2"
+                    className="transition-[fill] duration-300 ease-out group-hover:fill-white"
                   />
                 </svg>
               </div>
@@ -209,8 +236,8 @@ export function Slide05({ scaleX, scaleY }: Props) {
                   minWidth: 0,
                   fontSize: vs(24),
                   lineHeight: `${vs(32)}px`,
-                  color: "#04165d",
                 }}
+                className="text-[#04165d] transition-colors duration-300 ease-out group-hover:text-white"
               >
                 {card.title}
               </p>
@@ -223,7 +250,9 @@ export function Slide05({ scaleX, scaleY }: Props) {
                 flexDirection: "column",
                 gap: vy(12),
                 paddingLeft: vx(4),
+                paddingRight: vx(76),
                 width: "100%",
+                boxSizing: "border-box",
               }}
             >
               {card.items.map((item) => (
@@ -236,9 +265,9 @@ export function Slide05({ scaleX, scaleY }: Props) {
                     style={{
                       width: vs(12),
                       height: vs(12),
-                      backgroundColor: "#036ef2",
                       flexShrink: 0,
                     }}
+                    className="bg-[#036ef2] transition-colors duration-300 ease-out group-hover:bg-white"
                   />
                   <p
                     style={{
@@ -248,12 +277,37 @@ export function Slide05({ scaleX, scaleY }: Props) {
                       fontSize: vs(18),
                       lineHeight: `${vs(24)}px`,
                     }}
-                    className="font-['Bronkoh-Regular',sans-serif] not-italic text-[#2f3237]"
+                    className="font-['Bronkoh-Regular',sans-serif] not-italic text-[#2f3237] transition-colors duration-300 ease-out group-hover:text-white"
                   >
                     {item}
                   </p>
                 </div>
               ))}
+            </div>
+
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute flex origin-bottom-right transform-gpu items-center justify-center rounded-full bg-[rgba(3,110,242,0.12)] text-[#04165d] transition-[scale,background-color,color] duration-[220ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform group-hover:scale-[1.6] group-hover:bg-white group-hover:text-[#036ef2] group-hover:duration-[380ms] motion-reduce:transition-none"
+              style={{
+                right: vx(24),
+                bottom: vy(24),
+                width: vs(40),
+                height: vs(40),
+              }}
+            >
+              <svg
+                width={vs(20)}
+                height={vs(20)}
+                viewBox="0 0 32 32"
+                fill="none"
+                aria-hidden="true"
+                className="origin-center transform-gpu transition-transform duration-[180ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rotate-90 group-hover:duration-[320ms] motion-reduce:transition-none"
+              >
+                <path
+                  d="M14 6H18V14H26V18H18V26H14V18H6V14H14V6Z"
+                  fill="currentColor"
+                />
+              </svg>
             </div>
           </motion.div>
         ))}
@@ -290,7 +344,7 @@ export function Slide05({ scaleX, scaleY }: Props) {
             style={{ fontSize: vs(14), letterSpacing: vs(1.5) }}
             className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#6e7587] uppercase whitespace-nowrap"
           >
-            PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING
+            Experience Engineering nos projectos
           </p>
         </div>
 
@@ -339,6 +393,14 @@ export function Slide05({ scaleX, scaleY }: Props) {
           </div>
         </div>
       </motion.div>
+
+      <ExperienceAreaModal
+        open={activeCard !== null}
+        initialIndex={activeCard ?? 0}
+        onClose={() => setActiveCard(null)}
+        scaleX={scaleX}
+        scaleY={scaleY}
+      />
     </motion.div>
   );
 }

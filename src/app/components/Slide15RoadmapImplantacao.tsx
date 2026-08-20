@@ -685,7 +685,7 @@ export function Slide15RoadmapImplantacao({ scaleX, scaleY }: Props) {
             style={{ fontSize: vs(14), letterSpacing: vs(1.5), margin: 0 }}
             className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#6e7587] uppercase whitespace-nowrap"
           >
-            PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING
+            Experience Engineering nos projectos
           </p>
         </div>
         <TisLogo scale={vs} />

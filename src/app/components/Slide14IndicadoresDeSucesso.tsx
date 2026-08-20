@@ -53,7 +53,7 @@ const NAVY = "#04165d";
 const STROKE_BLUE = "rgba(43,118,193,0.4)";
 const PALE_BLUE = "rgba(3, 110, 242, 0.06)";
 const PANEL_BG = "#f0f6fe";
-const FOOTER_TEXT = "PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING";
+const FOOTER_TEXT = "Experience Engineering nos projectos";
 const EASE = [0.22, 1, 0.36, 1] as const;
 const PANEL_TRANSITION = { duration: 0.5, ease: EASE };
 const PANEL_SWAP_TRANSITION = { duration: 0.38, ease: EASE };
@@ -211,7 +211,7 @@ function SlideFooter({ metrics }: { metrics: Metrics }) {
           style={{ fontSize: vs(14), letterSpacing: vs(1.5), lineHeight: "normal" }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#036ef2] uppercase whitespace-nowrap"
         >
-          11
+          10
         </p>
         <div style={{ width: vx(24), height: vy(2), overflow: "hidden", position: "relative", flexShrink: 0 }}>
           <div style={{ position: "absolute", background: STROKE_BLUE, height: vs(1), left: 0, right: 0, top: 0 }} />

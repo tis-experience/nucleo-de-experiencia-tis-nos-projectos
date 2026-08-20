@@ -40,7 +40,7 @@ const LIGHT_BLUE = "rgba(3,110,242,0.12)";
 const MEDIUM_BLUE = "rgba(3,110,242,0.48)";
 const STROKE_BLUE = "rgba(43,118,193,0.4)";
 const EASE = [0.22, 1, 0.36, 1] as const;
-const FOOTER_TEXT = "PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING";
+const FOOTER_TEXT = "Experience Engineering nos projectos";
 const AUTORENEW_PATH =
   "M35.3 12.65C32.4 9.75 28.4 8 24 8C15.15 8 8 15.15 8 24C8 32.85 15.15 40 24 40C31.45 40 37.7 34.9 39.45 28H35.25C33.6 32.65 29.15 36 24 36C17.35 36 12 30.65 12 24C12 17.35 17.35 12 24 12C27.3 12 30.25 13.35 32.4 15.5L26 22H40V8L35.3 12.65Z";
 const HORIZONTAL_ARROW_LEFT_PATH = "M15 22L5 12L15 2L16.775 3.775L8.55 12L16.775 20.225L15 22Z";
@@ -454,9 +454,9 @@ function TisLogo({ scale }: { scale: (n: number) => number }) {
 function Header({ page, metrics }: { page: number; metrics: Metrics }) {
   const { vx, vy, vs } = metrics;
   const subtitle =
-    page === 0
-      ? "Da criação pontual de ecrãs para um modelo operacional de experiência."
-      : "Da criação pontual de ecrãs para um modelo operacional de experiência.";
+    page === 2
+      ? "Mudança cultural para actuação orientada ao utilizador."
+      : "Mudança cultural e actuação orientada ao problema.";
 
   return (
     <motion.div
@@ -497,7 +497,7 @@ function Header({ page, metrics }: { page: number; metrics: Metrics }) {
             color: NAVY,
           }}
         >
-          Modelo de actuação
+          Modelos de actuação
         </p>
       </div>
       <p
@@ -715,22 +715,20 @@ function PageOne({ metrics }: { metrics: Metrics }) {
         }}
       >
         <Bullet metrics={metrics}>
-          <span style={{ display: "block", marginBottom: vy(8) }}>Criar uma porta de entrada única para pedidos, com briefing mínimo:</span>
+          <span style={{ display: "block", marginBottom: vy(8) }}>É necessário ter uma mudança de cultura, onde deve-se questionar:</span>
           <strong style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}>
-            Objectivos de negócio, público, contexto de uso, restrições, prazo, stakeholders e critérios de sucesso.
+            Objectivos de negócio, público (personas), stakeholders, contexto de uso, restrições, prazo e critérios de sucesso.
           </strong>
         </Bullet>
-        <Bullet metrics={metrics}>Classificar pedidos por níveis de risco e incerteza.</Bullet>
         <Bullet metrics={metrics}>
-          Definir tipos de demandas:{" "}
+          Envolver o utilizador no processo desde o início:{" "}
           <strong style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}>
-            Quick win, Melhoria, Nova funcionalidade e Novo produto
+            entrevistas, testes de usabilidade e validações contínuas
           </strong>
-          , cada um com métodos, prazos, papéis e entregáveis compatíveis.
+          {" "}contribui para que as decisões respondam a necessidades reais.
         </Bullet>
         <Bullet metrics={metrics}>
-          <strong style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}>Estabelecer gates mínimos:</strong> problema
-          compreendido, escopo validado, uso do Design System, critérios de acessibilidade, handoff e métrica pós-release.
+          Cada demanda deve ser classificada considerando o nível de risco e incerteza. Isso permite definir os métodos, prazos, papéis e entregáveis.
         </Bullet>
       </ul>
 
@@ -747,8 +745,7 @@ function PageOne({ metrics }: { metrics: Metrics }) {
           color: NAVY,
         }}
       >
-        O núcleo passa a actuar com critério de triagem e priorização. Reduzindo entrada tardia, retrabalho e decisões baseadas apenas em percepção
-        visual.
+        Ao focar no problema real e envolver o utilizador desde o início, eliminamos retrabalho causado por decisões baseadas apenas em perceção interna.
       </p>
 
       <motion.div
@@ -950,7 +947,7 @@ function ClassificationText({
             color: BLUE,
           }}
         >
-          CritérioS de classificação
+          Critérios de classificação
         </p>
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
@@ -1305,7 +1302,7 @@ function EarlyDiagram({ metrics }: { metrics: Metrics }) {
         <FlowLabel metrics={metrics} width={177} scaleMode="uniform">
           Testes com público alvo
           <br />
-          <span style={{ fontWeight: 400 }}>(gerar aprendizagem)</span>
+          <span style={{ fontWeight: 400 }}>(gerar aprendizado)</span>
         </FlowLabel>
       </div>
       <SvgAsset
@@ -1531,7 +1528,7 @@ function CoreDiagram({ metrics }: { metrics: Metrics }) {
         <FlowLabel metrics={metrics} width={147} scaleMode="uniform">
           Testes com clientes
           <br />
-          <span style={{ fontWeight: 400 }}>(Gerar aprendizagem)</span>
+          <span style={{ fontWeight: 400 }}>(Gerar aprendizado)</span>
         </FlowLabel>
       </div>
       <CoreFlowArrow metrics={metrics} style={{ position: "absolute", left: ix(552.5), top: vy(arrowTop(bottomRowTop + 40)) }} />

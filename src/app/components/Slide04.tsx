@@ -2,12 +2,15 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { createSlideMetrics } from "../scaling";
 import svgPaths from "../../imports/04CamadasDaExperiencia/svg-n4bcoxy2ji";
+import { IcebergLayerModal } from "./IcebergLayerModal";
 
 interface Props {
   scaleX: number;
   scaleY: number;
   onPrev: () => void;
   onNext: () => void;
+  onModalChange?: (open: boolean) => void;
+  onLayerHover?: (active: boolean) => void;
 }
 
 const ease = "easeOut" as const;
@@ -169,12 +172,33 @@ const DETAILS: {
   },
 ];
 
-export function Slide04({ scaleX, scaleY }: Props) {
+export function Slide04({ scaleX, scaleY, onModalChange, onLayerHover }: Props) {
   const { vx, vy, vs } = createSlideMetrics(scaleX, scaleY);
 
   const [hoveredLayer, setHoveredLayer] = useState<
     number | null
   >(null);
+  const [pressedLayer, setPressedLayer] = useState<number | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalIndex, setModalIndex] = useState(0);
+
+  const setLayerHover = (index: number | null) => {
+    setHoveredLayer(index);
+    onLayerHover?.(index !== null);
+  };
+
+  const openLayerModal = (layerIndex: number) => {
+    setLayerHover(null);
+    setPressedLayer(null);
+    setModalIndex(ICE_LAYERS.length - 1 - layerIndex);
+    setModalOpen(true);
+    onModalChange?.(true);
+  };
+
+  const closeLayerModal = () => {
+    setModalOpen(false);
+    onModalChange?.(false);
+  };
 
   return (
     <motion.div
@@ -416,28 +440,57 @@ export function Slide04({ scaleX, scaleY }: Props) {
             height: vs(IC_H),
             display: "block",
             zIndex: 2,
-            mixBlendMode: "screen",
           }}
           viewBox={`0 0 ${ICE_W} ${IC_H}`}
           fill="none"
           preserveAspectRatio="none"
-          onMouseLeave={() => setHoveredLayer(null)}
+          onMouseLeave={() => {
+            setLayerHover(null);
+            setPressedLayer(null);
+          }}
         >
           {ICE_LAYERS.map((layer, i) => {
             const isHovered = hoveredLayer === i;
-            const highlightFill = isHovered
-              ? "rgba(255,255,255,0.2)"
-              : "rgba(255,255,255,0)";
+            const isPressed = pressedLayer === i;
+            const highlightFill = isPressed
+              ? "rgba(4,22,93,0.18)"
+              : isHovered
+                ? "rgba(255,255,255,0.2)"
+                : "rgba(255,255,255,0)";
             const path = (
               <path
                 d={svgPaths[layer.path]}
                 fill={highlightFill}
                 style={{
                   pointerEvents: "all",
-                  cursor: "default",
+                  cursor: "none",
+                  outline: "none",
                   transition: "fill 0.15s ease",
                 }}
-                onMouseEnter={() => setHoveredLayer(i)}
+                role="button"
+                tabIndex={0}
+                aria-label={`Abrir detalhes da camada ${LABELS[i].name}`}
+                aria-haspopup="dialog"
+                data-iceberg-layer={i}
+                onMouseEnter={() => setLayerHover(i)}
+                onFocus={() => setLayerHover(i)}
+                onBlur={() => {
+                  setLayerHover(null);
+                  setPressedLayer(null);
+                }}
+                onPointerDown={() => setPressedLayer(i)}
+                onPointerUp={() => setPressedLayer(null)}
+                onPointerCancel={() => setPressedLayer(null)}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  openLayerModal(i);
+                }}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    openLayerModal(i);
+                  }
+                }}
               />
             );
             return (
@@ -643,9 +696,17 @@ export function Slide04({ scaleX, scaleY }: Props) {
           }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#6e7587] uppercase whitespace-nowrap"
         >
-          PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING
+          Experience Engineering nos projectos
         </p>
       </div>
+
+      <IcebergLayerModal
+        open={modalOpen}
+        initialIndex={modalIndex}
+        onClose={closeLayerModal}
+        scaleX={scaleX}
+        scaleY={scaleY}
+      />
     </motion.div>
   );
 }

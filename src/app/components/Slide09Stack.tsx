@@ -84,7 +84,7 @@ const INK = "#2f3237";
 const MUTED = "#6e7587";
 const TAG_BG = "rgba(3,110,242,0.1)";
 const AI_PURPLE = "#3126b4";
-const FOOTER_TEXT = "PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING";
+const FOOTER_TEXT = "Experience Engineering nos projectos";
 const ease = "easeOut" as const;
 const fade = (delay: number) => ({ duration: 0.55, delay, ease });
 const primaryTool = (label: string): ToolChip => ({ label, background: "#113e75", color: "#7bdcff" });
