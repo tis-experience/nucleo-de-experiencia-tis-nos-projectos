@@ -25,7 +25,7 @@ const NAVY = "#04165d";
 const INK = "#2f3237";
 const MUTED = "#6e7587";
 const BORDER = "#c7cad1";
-const FOOTER_TEXT = "Núcleo de Experiência TIS nos projectos";
+const FOOTER_TEXT = "Núcleo de Experiência nos projectos";
 const ease = "easeOut" as const;
 const fade = (delay: number) => ({ duration: 0.55, delay, ease });
 

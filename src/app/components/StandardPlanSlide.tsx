@@ -137,7 +137,7 @@ export function StandardPlanSlide({
             style={{ fontSize: vs(14), letterSpacing: vs(1.5), lineHeight: "normal" }}
             className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#6e7587] uppercase whitespace-nowrap"
           >
-            Núcleo de Experiência TIS nos projectos
+            Núcleo de Experiência nos projectos
           </p>
         </div>
         <TisLogo scale={vs} />

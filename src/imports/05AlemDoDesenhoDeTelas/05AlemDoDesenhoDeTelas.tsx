@@ -6,7 +6,7 @@ function HeaderContainer() {
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-name="Header Container">
       <p className="font-['Bronkoh-SemiBold:Regular',sans-serif] leading-[normal] relative shrink-0 text-[#036ef2] text-[16px] tracking-[2px] uppercase w-full">Mudança de paradigma</p>
       <div className="font-['Bronkoh-Heavy:Regular',sans-serif] leading-[0] relative shrink-0 text-[#04165d] text-[80px] tracking-[-1.5px] w-full">
-        <p className="leading-none mb-0">Núcleo de Experiência TIS</p>
+        <p className="leading-none mb-0">Núcleo de Experiência</p>
         <p className="leading-none">muito além do desenho de ecrãs</p>
       </div>
     </div>

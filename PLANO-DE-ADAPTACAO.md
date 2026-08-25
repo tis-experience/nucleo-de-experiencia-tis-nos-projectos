@@ -1,4 +1,4 @@
-# Plano de adaptação — Núcleo de Experiência TIS nos projectos
+# Plano de adaptação — Núcleo de Experiência nos projectos
 
 ## 1. Direcção da nova apresentação
 
@@ -38,7 +38,7 @@ Explicar às lideranças, de forma visual e aplicada, como o Núcleo de Experiê
 
 | Nova página | Título de trabalho | Origem | Acção | O que entra | O que sai |
 |---|---|---|---|---|---|
-| 01 | **Núcleo de Experiência TIS nos projectos** | Capa actual | Adaptar | “Aplicação prática de UX”; subtítulo sobre integrar experiência, negócio e tecnologia | “Kickoff”, “Plano de implantação” e referências ao lançamento do núcleo |
+| 01 | **Núcleo de Experiência nos projectos** | Capa actual | Adaptar | “Aplicação prática de UX”; subtítulo sobre integrar experiência, negócio e tecnologia | “Kickoff”, “Plano de implantação” e referências ao lançamento do núcleo |
 | 02 | **O problema não é a falta de ecrãs** | Páginas actuais 03 e 04 | Recompor | Percurso actual `Pedido → Ecrãs → Desenvolvimento`; iceberg das cinco camadas como evidência visual secundária | Diagnóstico extenso, percentuais e tom de avaliação interna |
 | 03 | **O que muda com o Núcleo de Experiência** | Página actual 03 + conteúdo novo | Criar | Dois percursos paralelos do mesmo projecto: sem processo estruturado e com o Núcleo de Experiência; imagens de pedidos, ecrãs, desenvolvimento, testes, métricas e retrabalho | Explicação puramente textual do processo actual |
 | 04 | **Etapas, perguntas e entregáveis** | Página actual 06 e infográfico expandido | Redesenhar | `Descobrir, Definir, Explorar, Validar, Entregar, Acompanhar`; para cada etapa: pergunta respondida, entregável/evidência e imagem do artefacto | Lista longa de metodologias na visão principal e protagonismo excessivo da IA |

@@ -11,7 +11,7 @@ function Hero() {
       <Frame />
       <div className="font-['Bronkoh-Heavy:Regular',sans-serif] leading-[0] not-italic relative shrink-0 text-[168px] text-white tracking-[-5px] whitespace-nowrap">
         <p className="leading-[0.92] mb-0">Núcleo de</p>
-        <p className="leading-[0.92]">Experiência TIS</p>
+        <p className="leading-[0.92]">Experiência</p>
       </div>
     </div>
   );

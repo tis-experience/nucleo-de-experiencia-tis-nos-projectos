@@ -696,7 +696,7 @@ export function Slide04({ scaleX, scaleY, onModalChange, onLayerHover }: Props) 
           }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#6e7587] uppercase whitespace-nowrap"
         >
-          Núcleo de Experiência TIS nos projectos
+          Núcleo de Experiência nos projectos
         </p>
       </div>
 

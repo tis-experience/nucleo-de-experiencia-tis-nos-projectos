@@ -1,4 +1,4 @@
-# Núcleo de Experiência TIS nos projectos
+# Núcleo de Experiência nos projectos
 
 Apresentação executiva destinada às lideranças das áreas da TIS.
 
