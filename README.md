@@ -1,12 +1,12 @@
-# Experience Engineering nos projectos
+# Núcleo de Experiência TIS nos projectos
 
 Apresentação executiva destinada às lideranças das áreas da TIS.
 
-Este projecto deriva de `plano-de-implantacao`, mas possui outro propósito: demonstrar como Experience Engineering actua nos projectos, quais perguntas ajuda a responder, que evidências e entregáveis produz e o que muda quando existe um processo estruturado de UX.
+Este projecto deriva de `plano-de-implantacao`, mas possui outro propósito: demonstrar como o Núcleo de Experiência actua nos projectos, quais perguntas ajuda a responder, que evidências e entregáveis produz e o que muda quando existe um processo estruturado de UX.
 
 ## Estado
 
-**Apresentação adaptada.** A sequência activa possui 11 páginas contínuas e apresenta como Experience Engineering actua nos projectos da TIS.
+**Apresentação adaptada.** A sequência activa possui 11 páginas contínuas e apresenta como o Núcleo de Experiência actua nos projectos da TIS.
 
 ## Público e formato
 

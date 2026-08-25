@@ -104,7 +104,7 @@ const RITOS: Rito[] = [
     name: "Triagem de UX",
     tagColor: "orange",
     whens: [{ label: "Sob demanda", color: "orange" }],
-    who: "XP Engineering, Produto/solicitante e Desenvolvimento quando houver risco técnico.",
+    who: "Núcleo de Experiência, Produto/solicitante e Desenvolvimento quando houver risco técnico.",
     output: "Tipo de actuação, prioridade, esforço, risco e próximos passos.",
     tooltip: {
       body: "Avaliação de novas demandas para entender contexto, urgência, risco e profundidade necessária de actuação. Define se o trabalho segue para discovery, design, apoio consultivo, backlog ou redireccionamento.",
@@ -115,7 +115,7 @@ const RITOS: Rito[] = [
     name: "Planeamento de UX",
     tagColor: "blue",
     whens: [{ label: "Início Projecto/Sprint", color: "blue" }],
-    who: "XP Engineering e Produto se necessário.",
+    who: "Núcleo de Experiência e Produto se necessário.",
     output: "Itens priorizados, dependências, discovery/design necessário e riscos.",
     tooltip: {
       body: "Organiza o trabalho de UX antes do ciclo de desenvolvimento, garantindo clareza sobre prioridades, dependências, riscos e entregáveis necessários para manter o design à frente da sprint.",
@@ -126,7 +126,7 @@ const RITOS: Rito[] = [
     name: "Checkpoints",
     tagColor: "blue",
     whens: [{ label: "2x por semana", color: "blue" }],
-    who: "XP Engineering.",
+    who: "Núcleo de Experiência.",
     output: "Bloqueios resolvidos, prioridades ajustadas e próximos passos.",
     tooltip: {
       body: "Acompanhamento do trabalho em andamento para remover bloqueios, ajustar prioridades, alinhar próximos passos e garantir que decisões não fiquem paradas entre ritos maiores.",
@@ -137,7 +137,7 @@ const RITOS: Rito[] = [
     name: "Design Critique",
     tagColor: "blue",
     whens: [{ label: "Semanal", color: "blue" }],
-    who: "XP Engineering e convidados conforme tema: Produto, Desenvolvimento, QA ou stakeholders.",
+    who: "Núcleo de Experiência e convidados conforme tema: Produto, Desenvolvimento, QA ou stakeholders.",
     output: "Decisões de design, ajustes priorizados e riscos identificados.",
     tooltip: {
       body: "Revisão crítica de soluções em andamento, olhando problema, fluxo, clareza, acessibilidade, consistência, uso do Design System e impactos para o utilizador e para o produto.",
@@ -151,7 +151,7 @@ const RITOS: Rito[] = [
       { label: "Semanal", color: "blue" },
       { label: "Sob demanda", color: "orange" },
     ],
-    who: "XP Engineering, Desenvolvimento DS e Produto quando houver impacto no roadmap.",
+    who: "Núcleo de Experiência, Desenvolvimento DS e Produto quando houver impacto no roadmap.",
     output: "Componentes, padrões, exceções, dívidas técnicas e backlog do Design System.",
     tooltip: {
       body: "Espaço de decisão sobre evolução do Design System: novos componentes, padrões, exceções, dívida, documentação e prioridades. Durante a construção, tende a ser recorrente; depois, passa a ser accionado por necessidade.",
@@ -162,7 +162,7 @@ const RITOS: Rito[] = [
     name: "Design:Dev Sync",
     tagColor: "orange",
     whens: [{ label: "Sob demanda", color: "orange" }],
-    who: "XP Engineering, Desenvolvimento e Produto quando houver trade-off funcional.",
+    who: "Núcleo de Experiência, Desenvolvimento e Produto quando houver trade-off funcional.",
     output: "Viabilidade alinhada, estados definidos, critérios de aceite e handoff claro.",
     tooltip: {
       body: "Alinhamento entre design e desenvolvimento para discutir viabilidade, estados, comportamento, componentes, restrições técnicas e critérios de aceite antes ou durante o handoff.",
@@ -173,7 +173,7 @@ const RITOS: Rito[] = [
     name: "Experience Review",
     tagColor: "blue",
     whens: [{ label: "Fim de Sprint", color: "blue" }],
-    who: "XP Engineering, Produto, Desenvolvimento e QA.",
+    who: "Núcleo de Experiência, Produto, Desenvolvimento e QA.",
     output: "Ajustes de experiência, acessibilidade, comportamento e fidelidade ao design.",
     tooltip: {
       body: "Revisão da experiência implementada durante ou ao final da sprint, verificando fidelidade ao design, comportamento, acessibilidade, ajustes necessários e coerência com a solução aprovada.",
@@ -184,7 +184,7 @@ const RITOS: Rito[] = [
     name: "Insights Review",
     tagColor: "orange",
     whens: [{ label: "Sob demanda", color: "orange" }],
-    who: "XP Engineering, Produto, Desenvolvimento (se necessário), Gestão e áreas-chave conforme pauta.",
+    who: "Núcleo de Experiência, Produto, Desenvolvimento (se necessário), Gestão e áreas-chave conforme pauta.",
     output: "Achados sintetizados, evidências partilhadas, recomendações e implicações direccionadas.",
     tooltip: {
       body: "Partilha dos principais achados de pesquisa, discovery, testes ou análise de comportamento. O foco é transformar evidências em recomendações claras para orientar decisões de produto e experiência.",
@@ -195,7 +195,7 @@ const RITOS: Rito[] = [
     name: "Ops Review",
     tagColor: "blue",
     whens: [{ label: "Trimestral", color: "blue" }],
-    who: "XP Engineering, Produto, Desenvolvimento (se necessário), Gestão e áreas-chave conforme pauta.",
+    who: "Núcleo de Experiência, Produto, Desenvolvimento (se necessário), Gestão e áreas-chave conforme pauta.",
     output: "Gargalos identificados, métricas analisadas, decisões de melhoria e responsáveis definidos.",
     tooltip: {
       body: "Revisão da saúde da operação de UX, olhando gargalos, métricas, qualidade das entregas, adopção do Design System e ajustes necessários no processo.",
@@ -206,7 +206,7 @@ const RITOS: Rito[] = [
     name: "Canal DS",
     tagColor: "green",
     whens: [{ label: "Assíncrono", color: "green" }],
-    who: "XP Engineering, Desenvolvimento, Produto e QA.",
+    who: "Núcleo de Experiência, Desenvolvimento, Produto e QA.",
     output: "Dúvidas respondidas, orientações registadas, padrões esclarecidos e conhecimento partilhado com a equipa.",
     tooltip: {
       body: "Canal assíncrono para dúvidas rápidas, orientação de uso do Design System, alinhamento de padrões e partilha de referências. Serve para resolver temas operacionais sem criar reunião.",
@@ -217,7 +217,7 @@ const RITOS: Rito[] = [
     name: "Suporte",
     tagColor: "green",
     whens: [{ label: "Assíncrono", color: "green" }],
-    who: "XP Engineering, Desenvolvimento, Produto e QA.",
+    who: "Núcleo de Experiência, Desenvolvimento, Produto e QA.",
     output: "Pedidos qualificados, problemas recorrentes identificados e itens candidatos ao backlog.",
     tooltip: {
       body: "Entrada assíncrona para pedidos, problemas recorrentes, exceções e necessidades identificadas no uso do Design System. O objetivo é qualificar sinais e transformar o que fizer sentido em backlog.",
@@ -925,7 +925,7 @@ export function Slide13RitosDeUX({ scaleX, scaleY }: Props) {
             style={{ fontSize: vs(14), letterSpacing: vs(1.5) }}
             className="font-['Bronkoh-SemiBold',sans-serif] not-italic leading-normal text-[#6e7587] uppercase whitespace-nowrap"
           >
-            Experience Engineering nos projectos
+            Núcleo de Experiência TIS nos projectos
           </p>
         </div>
 

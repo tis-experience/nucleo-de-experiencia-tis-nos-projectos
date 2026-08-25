@@ -14,7 +14,7 @@ function Page() {
     <div className="content-stretch flex gap-[20px] items-center overflow-clip relative shrink-0" data-name="Page">
       <p className="font-['Bronkoh-SemiBold:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#036ef2] text-[14px] tracking-[1.5px] uppercase whitespace-nowrap">04</p>
       <Spacer />
-      <p className="font-['Bronkoh-SemiBold:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#6e7587] text-[14px] tracking-[1.5px] uppercase whitespace-nowrap">PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING</p>
+      <p className="font-['Bronkoh-SemiBold:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#6e7587] text-[14px] tracking-[1.5px] uppercase whitespace-nowrap">PLANO DE IMPLANTAÇÃO  -  Núcleo de Experiência</p>
     </div>
   );
 }
@@ -199,7 +199,7 @@ export default function Component04CamadasDaExperiencia() {
         <span className="font-['Manrope:ExtraBold',sans-serif] font-extrabold leading-[1.5] text-[#04165d] text-[32px]">.</span>
       </p>
       <p className="absolute font-['Manrope:Regular',sans-serif] font-normal leading-[1.5] left-[120px] text-[#6e7587] text-[14px] top-[899px] whitespace-nowrap">Modelo: Jesse James Garrett (2002), ilustração de Trevor van Gorp (2007)</p>
-      <p className="absolute font-['Bronkoh-Heavy:Regular',sans-serif] leading-[1.3] left-[120px] not-italic text-[#04165d] text-[32px] top-[691px] w-[474px]">A área de Experience Engineering deve atuar em todas elas.</p>
+      <p className="absolute font-['Bronkoh-Heavy:Regular',sans-serif] leading-[1.3] left-[120px] not-italic text-[#04165d] text-[32px] top-[691px] w-[474px]">O Núcleo de Experiência deve atuar em todas elas.</p>
       <Iceberg />
       <Header />
       <div className="absolute h-[54px] left-[1680px] opacity-90 overflow-clip top-[80px] w-[120px]" data-name="Logo">

@@ -212,7 +212,7 @@ export function Slide12InteractionMap({ metrics, onDragAreaHover }: Props) {
               color: "#fff",
             }}
           >
-            XP
+            Núcleo de
           </p>
           <p
             style={{
@@ -223,7 +223,7 @@ export function Slide12InteractionMap({ metrics, onDragAreaHover }: Props) {
               color: "#fff",
             }}
           >
-            Engineering
+            Experiência TIS
           </p>
         </motion.div>
         <div style={{ width: vx(52), height: vy(3), background: BLUE, flexShrink: 0 }} />

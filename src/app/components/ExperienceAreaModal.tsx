@@ -320,7 +320,7 @@ export function ExperienceAreaModal({
             <button
               ref={closeRef}
               type="button"
-              aria-label="Fechar detalhes das frentes de Experience Engineering"
+              aria-label="Fechar detalhes das frentes do Núcleo de Experiência"
               onClick={onClose}
               onMouseEnter={() => setCloseHovered(true)}
               onMouseLeave={() => setCloseHovered(false)}

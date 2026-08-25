@@ -25,11 +25,11 @@ interface Props {
 const PAGE_HEADERS = [
   {
     title: "Interações com as demais áreas",
-    body: "Experience Engineering como conexão entre negócio, utilizador e tecnologia.",
+    body: "O Núcleo de Experiência como conexão entre negócio, utilizador e tecnologia.",
   },
   {
     title: "Mapa de interações",
-    body: "Áreas com as quais Experience Engineering interage e o tipo de relação em cada caso.",
+    body: "Áreas com as quais o Núcleo de Experiência interage e o tipo de relação em cada caso.",
   },
   {
     title: "Responsáveis por etapa",
@@ -49,7 +49,7 @@ const INK = "#2f3237";
 const MUTED = "#6e7587";
 const STROKE_BLUE = "rgba(43,118,193,0.4)";
 const PALE_BLUE = "rgba(3, 110, 242, 0.06)";
-const FOOTER_TEXT = "Experience Engineering nos projectos";
+const FOOTER_TEXT = "Núcleo de Experiência TIS nos projectos";
 const EASE = [0.22, 1, 0.36, 1] as const;
 const PAGE_TRANSITION_SECONDS = 0.42;
 const NAV_ARROW_UP_PATH = "M2 16L12 6L22 16L20.225 17.775L12 9.55L3.775 17.775L2 16Z";

@@ -397,7 +397,7 @@ export default function App() {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   style={{ lineHeight: 0.92 }}
                 >
-                  Experience
+                  Núcleo de
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 50 }}
@@ -405,7 +405,7 @@ export default function App() {
                   transition={{ duration: 0.8, delay: 0.55 }}
                   style={{ lineHeight: 0.92 }}
                 >
-                  Engineering
+                  Experiência TIS
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 50 }}

@@ -331,7 +331,7 @@ export function Slide04({ scaleX, scaleY, onModalChange, onLayerHover }: Props) 
         }}
         className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
       >
-        Experience Engineering deve actuar em todas as camadas.
+        O Núcleo de Experiência deve actuar em todas as camadas.
       </motion.p>
 
       {/* ── Citation ── */}
@@ -696,7 +696,7 @@ export function Slide04({ scaleX, scaleY, onModalChange, onLayerHover }: Props) 
           }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#6e7587] uppercase whitespace-nowrap"
         >
-          Experience Engineering nos projectos
+          Núcleo de Experiência TIS nos projectos
         </p>
       </div>
 

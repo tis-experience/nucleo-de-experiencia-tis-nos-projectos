@@ -161,7 +161,7 @@ export function InteractionAreaCardView({
               color: INK,
             }}
           >
-            <span style={{ fontWeight: 800, color: NAVY }}>XP Engineering</span> {area.xpRole}
+            <span style={{ fontWeight: 800, color: NAVY }}>Núcleo de Experiência</span> {area.xpRole}
           </p>
         </motion.div>
       </motion.div>

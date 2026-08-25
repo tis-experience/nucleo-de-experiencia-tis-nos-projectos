@@ -91,7 +91,7 @@ export const ROADMAP_TASK_TOOLTIPS: Record<string, RoadmapTaskTooltip> = {
   },
   Kickoff: {
     title: "Kickoff",
-    body: "Disponibilização desta apresentação como marco inicial do núcleo de Experience Engineering, para alinhar a visão, o modelo de actuação e os próximos passos com as restantes áreas da TIS.",
+    body: "Disponibilização desta apresentação como marco inicial do Núcleo de Experiência, para alinhar a visão, o modelo de actuação e os próximos passos com as restantes áreas da TIS.",
   },
   "Criação do Hub de UX": {
     title: "Criação do Hub de UX",

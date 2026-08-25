@@ -10,8 +10,8 @@ function Hero() {
       <p className="font-['Bronkoh-Regular:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#036ef2] text-[24px] tracking-[1px] uppercase whitespace-nowrap">Planeamento da área</p>
       <Frame />
       <div className="font-['Bronkoh-Heavy:Regular',sans-serif] leading-[0] not-italic relative shrink-0 text-[168px] text-white tracking-[-5px] whitespace-nowrap">
-        <p className="leading-[0.92] mb-0">Experience</p>
-        <p className="leading-[0.92]">Engineering</p>
+        <p className="leading-[0.92] mb-0">Núcleo de</p>
+        <p className="leading-[0.92]">Experiência TIS</p>
       </div>
     </div>
   );

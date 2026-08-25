@@ -27,7 +27,7 @@ export const STAGE_RESPONSIBILITIES: StageResponsibility[] = [
     icon: driveFileMoveIcon,
     owner: "Comercial/Stakeholder",
     roles: [
-      { tag: "apoio", label: "XP Engineering e Produto" },
+      { tag: "apoio", label: "Núcleo de Experiência e Produto" },
       { tag: "validacao", label: "Direcção" },
     ],
   },
@@ -35,7 +35,7 @@ export const STAGE_RESPONSIBILITIES: StageResponsibility[] = [
     step: "ETAPA 02",
     title: "Discovery",
     icon: exploreIcon,
-    owner: "XP Engineering",
+    owner: "Núcleo de Experiência",
     roles: [
       { tag: "apoio", label: "Produto, Dados/BI" },
       { tag: "validacao", label: "Produto" },
@@ -45,7 +45,7 @@ export const STAGE_RESPONSIBILITIES: StageResponsibility[] = [
     step: "ETAPA 03",
     title: "Desenho da solução",
     icon: mobileLayoutIcon,
-    owner: "XP Engineering",
+    owner: "Núcleo de Experiência",
     roles: [
       { tag: "apoio", label: "Produto, Desenvolvimento, Stakeholder e Utilizador" },
       { tag: "validacao", label: "Produto, Stakeholder e Utilizador" },
@@ -57,8 +57,8 @@ export const STAGE_RESPONSIBILITIES: StageResponsibility[] = [
     icon: codeXmlIcon,
     owner: "Desenvolvimento",
     roles: [
-      { tag: "apoio", label: "XP Engineering e Produto" },
-      { tag: "validacao", label: "QA, Produto e XP Engineering" },
+      { tag: "apoio", label: "Núcleo de Experiência e Produto" },
+      { tag: "validacao", label: "QA, Produto e Núcleo de Experiência" },
     ],
   },
   {
@@ -67,7 +67,7 @@ export const STAGE_RESPONSIBILITIES: StageResponsibility[] = [
     icon: thumbUpIcon,
     owner: "QA",
     roles: [
-      { tag: "apoio", label: "XP Engineering" },
+      { tag: "apoio", label: "Núcleo de Experiência" },
       { tag: "validacao", label: "Produto e Stakeholder" },
     ],
   },
@@ -77,11 +77,11 @@ export const STAGE_RESPONSIBILITIES: StageResponsibility[] = [
     icon: tableEyeIcon,
     owner: "Dados/BI",
     roles: [
-      { tag: "apoio", label: "XP Engineering e Suporte/CS" },
-      { tag: "avaliacao", label: "XP Engineering e Produto" },
+      { tag: "apoio", label: "Núcleo de Experiência e Suporte/CS" },
+      { tag: "avaliacao", label: "Núcleo de Experiência e Produto" },
     ],
   },
 ];
 
 export const STAGE_RESPONSIBILITIES_FOOTNOTE =
-  "Experience Engineering como guardião da experiência ao longo do ciclo";
+  "Núcleo de Experiência como guardião da experiência ao longo do ciclo";
