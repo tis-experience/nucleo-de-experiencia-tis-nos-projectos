@@ -59,7 +59,7 @@ export function ClosingSlide({ scaleX, scaleY, logoRotateX, logoRotateY }: Props
           style={{ fontSize: vs(14), letterSpacing: vs(1.5), lineHeight: "normal" }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#036ef2] uppercase whitespace-nowrap"
         >
-          2026
+          TIS
         </p>
         <div style={{ width: vx(24), height: vy(2), overflow: "hidden", position: "relative", flexShrink: 0 }}>
           <div style={{ position: "absolute", background: "rgba(43,118,193,0.4)", height: vs(1), left: 0, right: 0, top: 0 }} />
@@ -68,7 +68,7 @@ export function ClosingSlide({ scaleX, scaleY, logoRotateX, logoRotateY }: Props
           style={{ fontSize: vs(14), letterSpacing: vs(1.5), lineHeight: "normal" }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-white uppercase whitespace-nowrap"
         >
-          TIS - Núcleo de Experiência
+          Núcleo de Experiência
         </p>
       </motion.div>
 
