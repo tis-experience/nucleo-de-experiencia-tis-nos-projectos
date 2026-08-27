@@ -207,9 +207,11 @@ export function Slide12InteractionMap({ metrics, onDragAreaHover }: Props) {
             style={{
               margin: 0,
               fontFamily: "'Bronkoh-Heavy', sans-serif",
-              fontSize: vs(80),
+              fontSize: vs(50),
               lineHeight: 1,
+              letterSpacing: vs(-0.5),
               color: "#fff",
+              whiteSpace: "nowrap",
             }}
           >
             Núcleo de
@@ -218,9 +220,11 @@ export function Slide12InteractionMap({ metrics, onDragAreaHover }: Props) {
             style={{
               margin: 0,
               fontFamily: "'Bronkoh-Heavy', sans-serif",
-              fontSize: vs(40),
-              lineHeight: "normal",
+              fontSize: vs(50),
+              lineHeight: 1,
+              letterSpacing: vs(-0.5),
               color: "#fff",
+              whiteSpace: "nowrap",
             }}
           >
             Experiência
